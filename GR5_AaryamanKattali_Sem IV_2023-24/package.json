@@ -1,0 +1,26 @@
+{
+  "name": "atharva-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js",
+    "dev0": "nodemon src/home.js",
+    "dev1": "nodemon src/login.js",
+    "dev2": "nodemon src/registration.js",
+    "dev3": "nodemon src/prices.js",
+    "dev4": "nodemon src/news.js",
+    "dev5": "nodemon src/selected_coin.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "mongoose": "^7.6.3",
+    "nodemon": "^3.0.1"
+  }
+}
