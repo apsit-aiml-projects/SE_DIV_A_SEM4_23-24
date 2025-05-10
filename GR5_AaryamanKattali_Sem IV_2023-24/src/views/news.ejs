@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="news.css">
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300;400;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Prices</title>
+    <style>
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #eaeef2;
+}
+
+
+
+.header{
+    background:linear-gradient(to right, #05161a,#0f434f);
+    height: 80px;
+    
+}
+.logo{
+    margin-right: 5%;
+}
+nav{
+    display: flex;
+    padding: 1% 1%;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.2);  
+}
+
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height:2px;
+    background: #0c7073;
+    display: block;
+    margin: auto;
+    transition: 0.2s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+.news-article {
+    width: 30%;
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.news-description {
+    font-size: 14px;
+}
+.news-item{
+    padding-top: 25px;
+}
+.footer{
+    width: 100%;
+    position: relative;
+    background: linear-gradient(to right, #05161a, #0f434f);
+    color: #fff;
+    padding: 0;
+    min-height: 300px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.logo1{
+    width: 150px;
+    
+}
+.container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    
+}
+ #information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+ }
+ #information p{
+    width: 100%;
+ }
+
+.col{
+    min-width: 250px;
+    color: #0c7073;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.col h4{
+    color: #ffffff;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+    font-family: 'PT Serif', serif;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+}
+.col h4::after{
+    content: '';
+    width: 0px;
+    height:2px;
+    background: #0c7073;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.2s;
+}
+.col h4:hover::after{
+    width: 50px;
+}
+.col .linked a{
+    display: block;
+    text-decoration: none;
+    color: #c8fdff;
+    margin-bottom: 5px;
+    
+    position: relative;
+    transition: 0.3s ease;
+}
+.col .linked a::before{
+    content: '';
+    height: 16px;
+    width: 3px;
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    background-color: #1d92d1;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+.col .linked a:hover::before{
+    opacity: 1;
+}
+.col .linked a:hover{
+    transform: translateX(-8px);
+    color: #3bb6d4;
+}
+
+
+.container p{
+    color: #3bb6d4;
+    width: 90%;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <!--Header-->
+    <section class="header">
+        <nav>
+            <a href="" class="logo"><img src="./stylesheet/xd.png" width="" height="50" alt="cryptex logo"></a>
+        
+            <div class="nav-links" id="navlinks">
+                <ul>
+                    <li><a href="http://localhost:4000/">HOME</a></li>
+                    <li><a href="http://localhost:8090/">PRICES</a></li>
+                    <li><a href="http://localhost:7000/">NEWS</a></li>
+                    
+                                   
+                </ul>
+            </div>
+        </nav>
+    </section>
+  <main>
+        <ul id="news-list" class="news-list">
+            <!-- News articles will be displayed here -->
+        </ul>
+    </main>
+    <div class="footer">
+        <div class="container">
+              <div class="row">
+                <div class="col" id="information">
+                  <img src="/stylesheet/xd.png" class="logo1">
+                  <p>Cryptex provides a fundamental analysis of the crypto market. In addition to tracking price, volume and market capitalisation, Cryptex tracks community growth, major events and on-chain metrics.</p>
+      
+                </div>
+            <div class="col" id="Services">
+              <h4>Services</h4>
+              <div class="linked">
+                <a href="#">Coins</a>
+                <a href="#">Overview</a>
+                <a href="#">Trending</a>
+                <a href="#">API</a>
+                <a href="#">Compare</a>
+            </div>
+            </div>
+            <div class="col" id="Links">
+              <h4>Links</h4>
+              <div class="linked">
+                <a href="#">Home</a>
+                <a href="#">Prices</a>
+                <a href="#">Watchlist</a>
+                <a href="#">News</a>
+              </div>
+            </div>
+            <div class="col" id="Contact Us">
+              <h4>Contact Us</h4>
+              <div class="contact-details">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <p>cryptex@gmail.com</p>
+               
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <p>+91-595318359</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script >
+      const rssFeedUrl = 'https://www.coindesk.com/feed';
+
+function fetchCryptoNews() {
+    const newsList = document.getElementById('news-list');
+
+    fetch('https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(rssFeedUrl))
+        .then(response => response.json())
+        .then(data => {
+            const items = data.items;
+
+            items.forEach(item => {
+                const title = item.title;
+                const description = item.description;
+
+                const newsItem = document.createElement('li');
+                newsItem.className = 'news-item';
+
+                const titleElement = document.createElement('div');
+                titleElement.className = 'news-title';
+                titleElement.textContent = title;
+
+                const descriptionElement = document.createElement('div');
+                descriptionElement.className = 'news-description';
+                descriptionElement.textContent = description;
+
+                newsItem.appendChild(titleElement);
+                newsItem.appendChild(descriptionElement);
+
+                newsList.appendChild(newsItem);
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching cryptocurrency news:', error);
+        });
+}
+
+// Call the function to fetch and display cryptocurrency news.
+fetchCryptoNews();
+
+
+
+    </script>
+</body>
+</html>
